@@ -1,0 +1,8 @@
+{
+  "blogPost": "All blog posts",
+  "welcome": "Welcome to Listify",
+  "language": "Language",
+  "postsBy": "All blog posts by: {{username}}!",
+  "currentPostOf": "Blog post by {{name}} /username: {{username}}/",
+  "footer": "Just an interview task"
+}

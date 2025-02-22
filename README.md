@@ -1,41 +1,80 @@
-# Getting Started with Create React App
+# Getting Started with LISTIFY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+This project is built using **Create React App** with the latest versions of **ReactJS**, **TypeScript**, and additional libraries.
 
-## Available Scripts
+## Technologies Used
+- **React i18next**: Used for internationalization and language support.
+- **Ant Design**: A comprehensive UI framework for React applications.
 
-In the project directory, you can run:
+## Installation
+Due to compatibility issues and conflicts with the latest versions of dependencies, it is recommended to install node modules with the `--force` flag. Оtherwise it will be devastating:
 
-### `npm start`
+```sh
+npm install --force
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Alternatively, if using Yarn:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```sh
+yarn install
+```
 
-### `npm run build`
+## Running the Application
+To start the development server, use:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+or
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+yarn start
+```
 
-### `npm run eject`
+The site runs in **development mode**. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Building the Application
+To create a production-ready build, use:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+or
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```sh
+yarn build
+```
 
-## Learn More
+This will generate a `build/` directory with optimized static files ready for deployment.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Notes
+- Ensure you have the latest **Node.js** version installed to avoid potential conflicts.
+- If you encounter issues, try removing `node_modules` and `package-lock.json` (or `yarn.lock`) before reinstalling dependencies.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+rm -rf node_modules package-lock.json
+npm install --force
+```
+
+or
+
+```sh
+rm -rf node_modules yarn.lock
+yarn install --force
+```
+
+## Future Improvements
+There is still a lot to be done in this application, not only in parts of design but also functionality. 
+Some potential enhancements include:
+- **Pagination**, **filters**, sorting, and different **views for posts**.
+- Additional functionality to make the application more complex and feature-rich.
+- Implementing **ErrorBoundary** for better error handling.
+- Adding **unit and integration tests** to improve reliability.
+
+I didn't include **ErrorBoundary** and tests as I spent some time exploring **Ant Design**.
+
+
+

@@ -41,7 +41,7 @@ export default function PostsLists () {
                 style: panelStyle,
                 label: t('postsBy', {username: blogPosts[0].user.username}),
                 children: <Flex wrap gap="middle" justify='center' className='flex-container'> 
-                  {blogPosts.map((post: any) => <PostCard key={post.id} {...post}/> )}
+                  {blogPosts.map((post: PostWithUser) => <PostCard key={post.id} {...post}/> )}
                 </Flex>
               }]}
           />

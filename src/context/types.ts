@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 export interface ContextType { 
   error: Error | undefined;
-  setError: Function;
+  setError: () => void;
   colorLight: string;
   colorDark: string;
 }

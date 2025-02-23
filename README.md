@@ -1,17 +1,19 @@
 # Getting Started with LISTIFY
 
 ## Project Overview
-This project is built using **Create React App** with the latest versions of **ReactJS**, **TypeScript**, and additional libraries.
+This project was primary built using **Create React App** with the latest versions of **ReactJS**, **TypeScript**, and additional libraries. But due to the deprecation of **Create React App**, I migrated it to **Vite**.
+Now this is a Vite + React + TypeScript project for listing posts :P
 
 ## Technologies Used
+- **Vite**: Next Generation Frontend Tooling.
 - **React i18next**: Used for internationalization and language support.
 - **Ant Design**: A comprehensive UI framework for React applications.
 
-## Installation
-Due to compatibility issues and conflicts with the latest versions of dependencies, it is recommended to install node modules with the `--force` flag. Оtherwise it will be devastating:
+## Installation of the dependencies
+It's super easy one:
 
 ```sh
-npm install --force
+npm install
 ```
 
 Alternatively, if using Yarn:
@@ -24,16 +26,17 @@ yarn install
 To start the development server, use:
 
 ```sh
-npm start
+npm run dev
 ```
 
 or
 
 ```sh
-yarn start
+yarn dev
 ```
 
 The site runs in **development mode**. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+If you want to change the running port, you need to go to vite.config.ts and change port: 3000 to the port you want.
 
 ## Building the Application
 To create a production-ready build, use:
@@ -48,23 +51,7 @@ or
 yarn build
 ```
 
-This will generate a `build/` directory with optimized static files ready for deployment.
-
-## Notes
-- Ensure you have the latest **Node.js** version installed to avoid potential conflicts.
-- If you encounter issues, try removing `node_modules` and `package-lock.json` (or `yarn.lock`) before reinstalling dependencies.
-
-```sh
-rm -rf node_modules package-lock.json
-npm install --force
-```
-
-or
-
-```sh
-rm -rf node_modules yarn.lock
-yarn install --force
-```
+This will generate a `dist/` directory with optimized static files ready for deployment.
 
 ## Future Improvements
 There is still a lot to be done in this application, not only in parts of design but also functionality. 
